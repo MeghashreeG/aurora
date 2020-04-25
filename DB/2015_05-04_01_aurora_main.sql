@@ -41,7 +41,7 @@ INSERT INTO `admin` (`variable`, `value`) VALUES
 ('lastjudge', '0'),
 ('mode', 'Disabled'),
 ('penalty', '20'),
-('notice', 'Aurora Online Judge\r\nWelcome to Aurora Online Judge'),
+('notice', 'Online Judge\r\nWelcome to Online Judge'),
 ('endtime', '0'),
 ('starttime', '0'),
 ('port', '8723'),
@@ -227,7 +227,7 @@ IF new.result <> old.result THEN
 			SELECT value into v_pen from admin where variable = 'penalty';
 			SELECT (v_penalty + v_incorrect*v_pen*60) into v_penalty;
 			SELECT (v_sco + v_score) into v_sco;
-		ELSE 
+		ELSE
 			SELECT (v_dqsco + v_score) into v_dqsco;
 		END IF;
 	end loop;
