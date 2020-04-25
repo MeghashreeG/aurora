@@ -121,7 +121,7 @@ doCompetitionCheck(); //Activate competition when planned
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo SITE_URL; ?>/">Aurora</a>
+                    <a class="navbar-brand" href="<?php echo SITE_URL; ?>/">Intuit</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -155,9 +155,9 @@ doCompetitionCheck(); //Activate competition when planned
                                         <li><a href='<?php echo SITE_URL; ?>/admingroup'>Group Settings</a></li>
                                         <li><a href='<?php echo SITE_URL; ?>/adminclar'>Clarifications</a></li>
                                         <li><a href='<?php echo SITE_URL; ?>/adminbroadcast'>Broadcast</a></li>
-                                        <li><a href='<?php echo SITE_URL; ?>/adminlog'>Request Logs</a></li>                                            
+                                        <li><a href='<?php echo SITE_URL; ?>/adminlog'>Request Logs</a></li>
                                     </ul>
-                                </li>                              
+                                </li>
                             <?php } ?>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -172,8 +172,8 @@ doCompetitionCheck(); //Activate competition when planned
                         </ul>
                     <?php } ?>
                 </div>
-            </div> 
-        </nav> 
+            </div>
+        </nav>
         <div class="container bodycont">
             <div class='row'>
                 <div class='col-md-9' id='mainbar'>
@@ -254,7 +254,7 @@ doCompetitionCheck(); //Activate competition when planned
             </div>
         </div>
         <div class="footer">
-            <a href="https://github.com/pushkar8723/Aurora" target="_blank">Aurora - An Open Source Online Judge</a>
+            <a href="https://github.com/pushkar8723/Aurora" target="_blank">An Open Source Online Judge</a>
         </div>
     </body>
 </html>
