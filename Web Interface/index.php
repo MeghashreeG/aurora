@@ -32,7 +32,7 @@ doCompetitionCheck(); //Activate competition when planned
                     $('#sidebar').height($('#mainbar').height());
             });
         </script>
-        <title>Aurora - An open-source online judge</title>
+        <title>An open-source online judge</title>
         <link rel='shortcut icon' href='<?php echo SITE_URL; ?>/img/favicon.png' />
     </head>
     <body>

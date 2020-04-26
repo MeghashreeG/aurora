@@ -12,7 +12,7 @@ if ($judge['value'] != "Lockdown" || (isset($_SESSION['loggedin']) && $_SESSION[
             $('#teamname').blur(function() {
                 $('#teamname').tooltip('hide');
             });
-            
+
             for(var i = 1; i <= 3; i++){
                 var id = '#roll' + i;
                 $(id).focus(function() {
@@ -24,12 +24,11 @@ if ($judge['value'] != "Lockdown" || (isset($_SESSION['loggedin']) && $_SESSION[
                 });
             }
 
-            
+
         });
 
         function validate(){
-
-            var regex = /[A-Z]{2,6}[/][0-9]{4,5}[/]20[0-9]{2}$/;
+            /*var regex = /[A-Z]{2,6}[/][0-9]{4,5}[/]20[0-9]{2}$/;
                 //console.log('A'.match(regex));
                 var roll1 = document.getElementById("roll1").value;
                 var m = regex.exec(roll1);
@@ -40,9 +39,8 @@ if ($judge['value'] != "Lockdown" || (isset($_SESSION['loggedin']) && $_SESSION[
                     document.getElementById("roll1").style.borderColor="red";
                     return false;
                 }
-                    
+                */
                 return true;
-
            }
     </script>
     <h1>Register</h1>
