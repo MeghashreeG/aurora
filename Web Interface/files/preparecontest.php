@@ -12,7 +12,7 @@ function activateContestProblems($contestID) {
 
 function getArrayOfRIDsToBeDeleted($contestID) {
 	$query = "SELECT rid from runs WHERE pid IN(SELECT pid FROM problems WHERE pgroup='$contestID')";
-	return DB::findAllFromQuery($query);	
+	return DB::findAllFromQuery($query);
 }
 
 function deleteRIDsFromRunsAndSubsCode($ridArray) {
@@ -31,7 +31,8 @@ if($currentTime > $result['starttime'] )
     die('Access denied');
 $query = "UPDATE admin set value='$contestID' where variable='currentContest'";
 DB::query($query);
-echo 'Current Contest set to $contestID';
+echo 'Current Contest set to $contestID.<br>';
+echo $contestID;
 activateContestProblems($contestID);
 deleteRIDsFromRunsAndSubsCode(getArrayOfRIDsToBeDeleted($contestID));
 echo 'Ready !!!';
